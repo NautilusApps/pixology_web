@@ -61,6 +61,71 @@ textarea {
 }
 
 
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+
 /* ===== Initializr Styles ==================================================
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
@@ -140,6 +205,7 @@ nav a:hover {
     padding-top: 70px;
 }
 
+
 .main aside {
     color: white;
     padding: 0px 5% 10px;
@@ -178,10 +244,11 @@ nav a:hover {
 
 .main-banner {
     position: relative;
+
     .img-device {
         float: left;
-        width: 280px;
-        margin-left: -160px;
+        width: 240px;
+        margin-left: -130px;
         -webkit-transition: all 0.4s ease-in-out;
           -moz-transition: all 0.4s ease-in-out;
           -o-transition: all 0.4s ease-in-out;
@@ -198,16 +265,36 @@ nav a:hover {
     }
 }
 
+.bottom-white {
+    background: rgba(255,255,255,0.6);
+    border-top: 1px solid rgba(0,0,0,0.1);
+    margin-top: -100px;
+    padding-bottom: 120px;
+}
 
+.main-container {
+    .info-panel {
+        background: rgba(255,255,255,0.6);
+        padding: 40px 10px 0px 10px;
+
+        img {
+            width: 160px;
+            float: left;
+            margin-left:10px;
+        }
+        p {
+            overflow: hidden;
+            padding: 0 20px;
+        }
+    }
+}
 
 .footer-container {
             background: rgba(255,255,255,0.6);
-            border-top: 1px solid rgba(0,0,0,0.1);
-            margin-top: -100px;
-            padding: 90px 0 60px 0;
+            padding: 40px 0 60px 0;
 
             &.zoom {
-                margin-top: 50px;
+                //margin-top: 50px;
             }
     footer {
         color: #333;
@@ -243,9 +330,10 @@ nav a:hover {
 
     .main-banner {
     position: relative;
+
         .img-device {
             float: left;
-            width: 340px;
+            width: 300px;
             margin-left: -100px;
             &.zoom {
                 float: left;
@@ -257,6 +345,7 @@ nav a:hover {
             width: 190px;
         }
     }
+
 
 
 /* ====================
@@ -296,14 +385,14 @@ nav a:hover {
 
     .main-banner h1 {
         font-size: 4.7em;
-        padding-top:200px;
+        padding-top:130px;
     }
 
     .main-banner {
     position: relative;
         .img-device {
             float: left;
-            width: auto;
+            width: 300px;
             margin-left: 0px;
             &.zoom {
                float: left;
@@ -313,6 +402,20 @@ nav a:hover {
         }
         .btn-appstore {
             width: 210px;
+        }
+    }
+
+    .main-container {
+        .info-panel {
+            float:left;
+            width: 46%;
+            padding: 40px 2%;
+
+            img {
+                width: 250px;
+                float: left;
+                margin-left:10px;
+            }
         }
     }
 
@@ -362,68 +465,6 @@ nav a:hover {
         width: 1026px; /* 1140px - 10% for margins */
         margin: 0 auto;
     }
-}
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    *text-indent: -9999px;
-}
-
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-}
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-.invisible {
-    visibility: hidden;
-}
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.clearfix {
-    *zoom: 1;
 }
 
 /* ==========================================================================
