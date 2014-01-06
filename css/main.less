@@ -128,6 +128,10 @@ p {
 }
 
 
+.show-small {
+    display: inline-block;
+}
+
 
 /* ===== Initializr Styles ==================================================
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
@@ -206,6 +210,7 @@ nav a:hover {
     font-weight: 100;
     line-height: 1;
     padding-top: 70px;
+    margin-bottom: 0px;
 }
 
 
@@ -232,9 +237,8 @@ nav a:hover {
 
 #modal {
     display: block;
-    transition: all 700ms;
+    /*transition: all 700ms;
     -webkit-transition: all 700ms; /* Safari */
-    position: fixed;
 }
 
 .modal-hide {
@@ -268,10 +272,6 @@ nav a:hover {
         -moz-box-shadow:    0px 2px 15px 0px rgba(0,0,0,0.8);
         -webkit-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.8);
          box-shadow:         0px 2px 15px 0px rgba(0,0,0,0.8);
-         video {
-            width: 100%    !important;
-            height: auto   !important;
-        }
     }
 
 
@@ -388,9 +388,13 @@ nav a:hover {
 
 @media only screen and (min-width: 480px) {
 
+    .show-small {
+        display: none;
+    }
+
     .main-banner h1 {
         font-size: 4em;
-        
+        margin: .67em 0;
     }
 
     .main-banner {
@@ -410,6 +414,9 @@ nav a:hover {
             width: 190px;
         }
     }
+
+
+
 
 
 
@@ -447,6 +454,7 @@ nav a:hover {
 }
 
 @media only screen and (min-width: 768px) {
+
 
     .main-banner h1 {
         font-size: 4.7em;

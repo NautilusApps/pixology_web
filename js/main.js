@@ -1,8 +1,4 @@
 $(document).ready(function(){
-	$('.img-device').click(function(){
-		$(this).toggleClass('zoom');
-		$('.footer-container').toggleClass('zoom');
-	});
 	$(".play-btn").click(function(){
 		event.preventDefault();
 		$("#modal").removeClass('modal-hide').addClass('modal-show');
