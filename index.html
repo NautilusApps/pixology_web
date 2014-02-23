@@ -62,7 +62,8 @@ mixpanel.init("0b80b4a8f3fd39961e17f7d2661b54cc");</script><!-- end Mixpanel -->
                 <a href="#" class="play-btn"><img class="img-device" src="img/device.png"></a>
                 <h1>Powerful layer editing</h1>
                 <a href="#" class="play-btn show-small"><h3>See Video</h3></a>
-                <a href="https://itunes.apple.com/us/app/pixology/id615161013?mt=8"><img class="btn-appstore" src="img/btn-appstore-small.png"></a>
+                <a class="appstore-btn" href="https://itunes.apple.com/us/app/pixology/id615161013?mt=8"><img class="btn-appstore" src="img/btn-appstore-small.png"></a>
+
             </div>            
                 
                
@@ -132,11 +133,9 @@ mixpanel.init("0b80b4a8f3fd39961e17f7d2661b54cc");</script><!-- end Mixpanel -->
         <script src="js/vendor/jquery-1.10.1.min.js"></script>
         <script src="js/main.js"></script>
 
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src='//www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
+<script type="text/javascript">
+    mixpanel.track_links(".appstore-btn", "App Store Clickthrough");
+</script>
+
     </body>
 </html>
