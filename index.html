@@ -9,6 +9,7 @@
         <title>Pixology</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
+        <meta name="apple-itunes-app" content="app-id=615161013">
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
@@ -27,6 +28,24 @@ mixpanel.init("0b80b4a8f3fd39961e17f7d2661b54cc");</script><!-- end Mixpanel -->
 </script>
     </head>
     <body>
+    
+    <div id="modal" class="modal-hide">
+        <div class="modal-bg">
+        </div>
+        <div class="embed-container">
+        <div class="video-embed">
+        <a href="#" class="btn-close"><img src="img/btn-close.png" border="0" /></a>
+            <video controls id="video1">
+              <source src="video/pixology-video.mp4" type="video/mp4">
+              <source src="video/pixology-video.ogg" type="video/ogg">
+              <source src="video/pixology-video.webm" type="video/webm">
+              HTML5 Video is required for this example. 
+                <a href="video/pixology-video.mp4">Download the video</a> file.
+            </video>
+        </div>
+        </div>
+    </div>
+    
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
@@ -40,16 +59,70 @@ mixpanel.init("0b80b4a8f3fd39961e17f7d2661b54cc");</script><!-- end Mixpanel -->
             
             
             <div class="main-banner">
-                <img class="img-device" src="img/device.png">
-                <h1>Serious Photo Art</h1>
+                <a href="#" class="play-btn"><img class="img-device" src="img/device.png"></a>
+                <h1>Powerful layer editing</h1>
+                <a href="#" class="play-btn show-small"><h3>See Video</h3></a>
                 <a href="https://itunes.apple.com/us/app/pixology/id615161013?mt=8"><img class="btn-appstore" src="img/btn-appstore-small.png"></a>
             </div>            
-            
+                
+               
             </div> <!-- #main -->
+            
+            <div class="bottom-white"></div>
+           
+            <div class="benefit-section clearfix">
+            
+            <h2>Features</h2>
+            
+            <section class="info-panel clearfix">
+                <img class="img-device" src="img/screenshot-textures-round.png" />
+                <div class="text"><h3>Rich textures</h3>
+                <p>Choose from over 100 original high quality textures to blend with your photos.</p></div>
+            </section>
+            
+             <section class="info-panel clearfix">
+                <img class="img-device" src="img/screenshot-layers-round.png" />
+                <div class="text"><h3>Overlay layers</h3>
+                <p>Add layers on top of each other and rearrange them in any order.</p></div>
+            </section>
+            
+            <section class="info-panel clearfix">
+                <img class="img-device" src="img/screenshot-exposure-round.png" />
+                <div class="text"><h3>Powerful Layer Adjustments</h3>
+                <p>Adjust exposure, birghtness, contrast, saturation, and more.</p></div>
+            </section>
+           
+            <section class="info-panel clearfix">
+                <img class="img-device" src="img/screenshot-transform-round.png" />
+                <div class="text"><h3>Free transform</h3>
+                <p>Pinch, rotate and free transform any layer.</p></div>
+            </section>
+            
+            <section class="info-panel clearfix">
+                <img class="img-device" src="img/screenshot-import-round.png" />
+                <div class="text"><h3>Plays nicely with the apps you already love</h3>
+                <p>Seamlessly import your art from other photo apps.</p></div>
+            </section>
+            
+            <section class="info-panel clearfix">
+                <img class="img-device" src="img/screenshot-share-round.png" />
+                <div class="text"><h3>Socialize and share</h3>
+                <p>When you're done, it's easy share your masterpiece with your friends.</p>
+            </section>
+            </div>
+            
         </div> <!-- #main-container -->
 
         <div class="footer-container">
             <footer class="wrapper">
+                
+                <h3>Let's be friends</h3>
+                <div class="social-links">
+                <a href="http://instagram.com/pixologyapp"><img src="img/icn-instagram.png" border="0" /></a>
+                <a href="https://twitter.com/PixologyApp"><img src="img/icn-twitter.png" border="0" /></a>
+<!--                 <img src="img/icn-facebook.png" border="0" /> -->
+                
+                </div>
                 
             </footer>
         </div>

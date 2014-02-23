@@ -1,6 +1,11 @@
 $(document).ready(function(){
-	$('.img-device').click(function(){
-		$(this).toggleClass('zoom');
-		$('.footer-container').toggleClass('zoom');
-	})
-})
+	$(".play-btn").click(function(){
+		event.preventDefault();
+		$("#modal").removeClass('modal-hide').addClass('modal-show');
+		$('#video1').get(0).play();
+	});
+	$(".btn-close").click(function(){
+		$("#modal").removeClass('modal-show').addClass('modal-hide');
+		$('#video1').get(0).pause();
+	});
+});
